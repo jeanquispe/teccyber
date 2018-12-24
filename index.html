@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Teccyber</title>
+   
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="bootstrap/assets/css/font-awesome.css">
-    <!-- boostrap-social-> este link es para poner el diseño al icono -->
- <link rel="stylesheet" href="bootstrap/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/assets/css/font-awesome.css">
+    <!-- boostrap-social-> este link es para poner el diseÃ±o al icono -->
+ <link rel="stylesheet" href="css/bootstrap/assets/css/bootstrap.css">
 <!-- boostrap-social-> este link es para poner el hover al icono -->
- <link rel="stylesheet" href="bootstrap/bootstrap-social.css">
-    <link rel="stylesheet" href="bootstrap/assets/css/font-awesome.css">
-
-
+ <link rel="stylesheet" href="css/bootstrap/bootstrap-social.css">
+    <link rel="stylesheet" href="css/bootstrap/assets/css/font-awesome.css">
 
   </head>
   <body>
+
     <!-- Encabezado -->
     <header>
       <div class="contenedor">
@@ -28,9 +28,9 @@
       </div>
       <nav class="menu">
         <a href="#inicio" class="js-scroll-trigger">inicio</a>
-        <a href="#">Servicios</a>
+        <a href="#servicios"  class="js-scroll-trigger">Servicios</a>
         <a href="#nosotros" class="js-scroll-trigger">Nosotros</a>
-        <a href="#">BLog</a> 
+        <a href="#portfolio" class="js-scroll-trigger">Portfolio</a> 
         <a href="#contacto" class="js-scroll-trigger">Contacto</a>
       </nav>
     </header>
@@ -43,11 +43,14 @@
             !No importa que negocio tengas tu Web Siempre Debe ser La MEjor!
           </p>
           <h2>Teccyber</h2>
-          <a href="#">VER MAS</a>
+          
+              <a href="#inicio" class="js-scroll-trigger"><i class="fa fa-angle-down "> </i></a>
+
         </div>
       </div>
     </section>
 
+    <!--Seccion Inicio -->
     <section class="bienvenida" id="inicio"">
       <div class="contenedor">
         <h3>BIENVENIDO A MI SITIO WEB</h3>
@@ -58,7 +61,8 @@
         </p>
       </div>
     </section>
-
+    
+    <!--Seccion Nosotros-->
     <section class="nosotros" id="nosotros">
       <div class="contenedor">
         <div class="foto-equipo">
@@ -66,9 +70,7 @@
         </div>
         <div class="conocenos">
           <!-- <p>CONOCENOS</p> -->
-
           <h3>NOSOTROS</h3>
-         
           <p>
            Somos un equipo dispuestos a ayudarte .Entre nuestras principales funciones destacan una amplia experiencia
             en desarrollo y diseños de paginas web.Proporcionamos a nuestros clientes el acceso a las tecnologías de la información permitiéndoles la generación de ventajas competitivas en su sector.!
@@ -78,7 +80,54 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <!-- Seccion Servicios -->
+    <section class="servicios"  id="servicios">
+      <div class="proyecto">
+        <div class="contenedor">
+          <h2>Servicios</h2>
+          <div class="linea"></div>
+        </div>
+      </div>
+        
+      <div class="col-md">
+      <div class="p-columna">
+          <div class="p-columna-texto">
+            <h3>Diseño web</h3>
+            <p>Maquetación y Animación</p>
+          </div>
+          <div class="p-columna-texto"> 
+            <h3>Implementacion Web</h3>   
+            <p>Implementación de Plantillas WordPress</p>        
+          </div>
+          <div class="p-columna-texto">
+            <h3>Personalizacion de Temas</h3>
+            <p>Modificación de Temas WordPress y mas </p>
+          </div>
+      </div>
+      <div class="p-columna">
+          <div class="colum-movil">
+            <img src="img/servicios/movil.png" alt="">
+          </div>
+      </div>
+
+      <div class="p-columna">
+          <div class="p-columna-texto">
+            <h3>Diseño logos</h3>
+            <p>Tenemos el perfecto diseño de logo para tu negocio</p>
+          </div>
+          <div class="p-columna-texto"> 
+            <h3>Creación/Edición de Videos</h3>   
+            <p>Creamos videos personalizados y para tu negocio</p>        
+          </div>
+          <div class="p-columna-texto">
+            <h3>Creación Fan page + chatbot</h3>
+            <p>Implementamos tu fan page incluyendo el chatbot configurado </p>
+          </div>
+      </div>
+      </section>
+
+    <!-- Seccion portfolio -->
+    <section class="portfolio"  id="portfolio">
       <div class="proyecto">
         <div class="contenedor">
           <h2>Proyectos recientes</h2>
@@ -86,6 +135,7 @@
         </div>
       </div>
 
+      <div class="porfolio-bk">
       <div class="portfolio-container">
         <div class="portfolio-item">
           <img src="img/portfolio/1.jpg" alt="">
@@ -96,17 +146,14 @@
         <div class="portfolio-item">
           <img src="img/portfolio/3.png" alt="">
         </div>
-        <div class="portfolio-item">
-          <img src="img/portfolio/4.png" alt="">
-        </div>
-
       </div>
+    </div>
     </section>
 
-
-    <section class="get-in-touch" id="contacto">
-      <h1 class="title">Contactanos</h1>
-      <form class="contact-form row">
+      <!-- seccion contacto -->
+    <section class="contactanos" id="contacto">
+      <h1 class="title">Escribeme</h1>
+      <form class="contact-form row-contact">
          <div class="form-field col x-50">
             <input id="name" class="input-text " type="text" required>
             <label class="label" for="name">Nombre</label>
@@ -122,8 +169,11 @@
          <div class="form-field col x-100 ">
             <input class="submit-btn" type="submit" value="Enviar">
          </div>
+
       </form>
+
    </section>
+
 
     <!-- pie de pagina -->
     <footer>
@@ -149,9 +199,6 @@
                
                <a class="btn btn-social-icon btn-youtube"><span class="fa fa-youtube"></span></a> <p>Youtube</p>           
               </div>
-              
-    
-
             </p>
           </div>
           <div class="widget">
@@ -169,15 +216,19 @@
       </div>
     </footer>
 
+    <button id="js_up" class="boton-subir ">   <i class="fa fa-rocket" aria-hidden="true"></i></button>
 
-          
-    <script src="js/prefixfree.min.js"></script>
+            <script src="js/prefixfree.min.js"></script>
             <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery/jquery.min.js"></script>
+            <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
             <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <script src="js/jquery-easing/jquery.easing.min.js"></script>
             <script src="js/scrolltop.js"></script>
+
+            <!-- script -->
+    
+   
 
   </body>
 </html>
